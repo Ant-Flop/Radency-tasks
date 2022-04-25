@@ -5,37 +5,50 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<script type="module" scr="js/index.js"></script>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="js/index.js"></script>
+	<script type="module" src="js/render.js"></script>
 	<title>Notes App</title>
 </head>
 
 <body>
 	<div class="wrapper">
-		<div class="table">
-			<div class="name-table">
-				<span>Active table</span>
+		<div class="header">
+			<div class="logo">Note App</div>
+		</div>
+		<div class="main">
+			<div class="table">
+				<div class="name-table">
+					<img src="img/open-eye.png" alt="hide" class="show-hide" onclick="hideTable('active-table')">
+					<span>Active table</span>
+				</div>
+				<div class="active-table">
+					<table>
+						
+					</table>
+				</div>
 			</div>
-			<div class="active-table">
-				<table></table>
+			<div class="table">
+				<div class="name-table">
+					<img src="img/open-eye.png" alt="hide" class="show-hide" onclick="hideTable('summary-table')">
+					<span>Summary table</span>
+				</div>
+				<div class="summary-table">
+					<table></table>
+				</div>
+			</div>
+			<div class="table">
+				<div class="name-table">
+					<img src="img/open-eye.png" alt="hide" class="show-hide" onclick="hideTable('archive-table')">
+					<span>Archive table</span>
+				</div>
+				<div class="archive-table">
+					<table></table>
+				</div>
 			</div>
 		</div>
-		<div class="table">
-			<div class="name-table">
-				<span>Summary table</span>
-			</div>
-			<div class="summary-table">
-				<table></table>
-			</div>
-		</div>
-		<div class="table">
-			<div class="name-table">
-				<span>Archive table</span>
-			</div>
-			<div class="archive-table">
-				<table></table>
-			</div>
-		</div>
+		<div class="footer"></div>
+
 	</div>
 </body>
 

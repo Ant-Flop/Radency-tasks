@@ -91,23 +91,65 @@ h6 {
 
 
 .wrapper {
-	display: grid;
-	grid-template-columns: auto;
-	padding: 10px;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
-.table {
+.header {
+	background-color: rgb(46, 45, 45);
 	padding: 20px;
 	text-align: center;
-	
-	width: 1200px;
-	justify-self: center;
+	display: flex;
+}
+
+.main {
+	padding: 30px;
+	flex: 1 1 auto;
+	display: grid;
+	grid-template-columns: auto;
+	background-color: #eefbf9;
+}
+
+.footer {
+	background-color: rgb(46, 45, 45);
+	padding: 15px;
+	text-align: center;
+}
+
+.logo {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
 }
 
 .name-table {
-	background-color: #b5b5b5;
+	background-color: #b3c0e1;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 18px;
 	padding: 10px;
 	margin: 10px;
 }
+
+.show-hide {
+	width: 25px;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.show-hide:hover {
+	background-color: #97abdd;
+	border-radius: 100%;
+}
+
+
+
+.table {
+	padding: 20px;
+	text-align: center;
+	width: 1200px;
+	justify-self: center;
+}
+
